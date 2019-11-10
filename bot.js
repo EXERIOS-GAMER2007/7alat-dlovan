@@ -53,6 +53,18 @@ if (message.content.startsWith(prefix + 'setgame')) {
 
 
 });
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'هلا') {
+    msg.reply( 'اهلين!');
+  }
+});
 
 
 client.login(process.env.BOT_TOKEN);
