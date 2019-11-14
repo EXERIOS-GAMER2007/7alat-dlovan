@@ -74,4 +74,15 @@ client.on('message', msg => {
   }
 });
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'السلام عليكم
+') {
+    msg.reply('وعليكم السلام ورحمه الله وبركاته' );
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
