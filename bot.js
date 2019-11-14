@@ -85,4 +85,15 @@ client.on('message', msg => {
   }
 });
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'باك') 
+  {
+    msg.reply('ولكم' );
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
