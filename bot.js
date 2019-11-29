@@ -54,46 +54,4 @@ if (message.content.startsWith(prefix + 'setgame')) {
 
 });
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'هلا') {
-    msg.reply( 'اهلين!');
-  }
-});
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === '.') {
-    msg.reply('ولكم' );
-  }
-});
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'السلام عليكم') 
-  {
-    msg.reply('وعليكم السلام ورحمه الله وبركاته' );
-  }
-});
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'باك') 
-  {
-    msg.reply('ولكم' );
-  }
-});
-
 client.login(process.env.BOT_TOKEN);
